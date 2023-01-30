@@ -1,6 +1,6 @@
 <?php
 
-$to ='pinaka2022@gmail.com,Nestorpropertiespune@gmail.com';
+$to ='pinaka2022@gmail.com,Whitecarpetllp@gmail.com';
 
 $first_name = $_POST["first_name"];
 $email= $_POST["email"];
