@@ -18,4 +18,41 @@
   height: 400px !important;
 }
 
+.animate-btn {
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+}
+.animate-btn::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.85);
+  height: 8rem;
+  width: 4rem;
+  left: 1rem;
+  transform: rotate(14deg);
+  position: absolute;
+  top: -1rem;
+  filter: blur(7px);
+  animation-name: btnanimation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes updown {
+  from {
+    top: -0.6rem;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes btnanimation {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
 
